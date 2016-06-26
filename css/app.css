@@ -1,0 +1,88 @@
+body{
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 16px;
+  color: #686b72;
+}
+
+h1{
+  font-family: "Nimbus Sans Cond Reg", sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  color: #000;
+  margin-bottom: 10px
+}
+
+h2{
+  font-family: "Nimbus Sans Cond Reg", sans-serif;
+  font-size:24px;
+  line-height: 20px;
+  color:#000;
+  margin-top:6px;
+  margin-bottom: 6px;
+}
+
+h3{
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 16px;
+  line-height:20px;
+  color: #000;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+h4{}
+h5{}
+h6{}
+
+p{
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 16px;
+  color: #686b72;
+}
+
+a{
+  color:#7f873f;
+}
+
+a:hover{
+  color:#4c5438;
+  border-bottom: 1px solid #4c5438;
+  -webkit-transition: color .5s ease-in;
+  -moz-transition: color .5s ease-in;
+  -ms-transition: color .5s ease-in;
+  -o-transition: color .5s ease-in;
+  transition: color .5s ease-in;
+}
+
+button{
+  font-family: "Nimbus Sans Cond Reg", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding:10px 15px;
+  /* these will change with hover */
+  background:#7f873f;
+}
+
+button:hover{
+  background:#4c5438;
+  -webkit-transition: color .5s ease-in;
+  -moz-transition: color .5s ease-in;
+  -ms-transition: color .5s ease-in;
+  -o-transition: color .5s ease-in;
+  transition: color .5s ease-in;
+}
+
+.gray1 {
+  background:#f2f2f2;
+}
+.gray2{
+  background: #eaeaea;
+}
+.gray3{
+  background: #d3d3d3;
+}
+.gray4{
+  background: #bfbfbf;
+}
