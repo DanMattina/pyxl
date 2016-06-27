@@ -2,10 +2,13 @@ body{
   font-family: "Proxima Nova Regular", sans-serif;
   font-size: 16px;
   color: #686b72;
+  background :url(../Slices/big-ears-festival-2016-header.jpg) no-repeat #f2f2f2;
+  background-position: center top;
+  background-size: 100% auto;
 }
 
 h1{
-  font-family: "Nimbus Sans Cond Reg", sans-serif;
+  font-family: Nimbus Sans Cond Reg, sans-serif;
   font-size: 32px;
   line-height: 32px;
   color: #000;
@@ -47,31 +50,31 @@ a{
 a:hover{
   color:#4c5438;
   border-bottom: 1px solid #4c5438;
-  -webkit-transition: color .5s ease-in;
-  -moz-transition: color .5s ease-in;
-  -ms-transition: color .5s ease-in;
-  -o-transition: color .5s ease-in;
-  transition: color .5s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
-button{
+button, .inputButton{
   font-family: "Nimbus Sans Cond Reg", sans-serif;
   font-size: 18px;
   line-height: 20px;
   color: #fff;
-  border: 1px solid #fff;
+  border: solid 1px #fff;
   padding:10px 15px;
   /* these will change with hover */
   background:#7f873f;
 }
 
-button:hover{
+button:hover, .inputButton:hover{
   background:#4c5438;
-  -webkit-transition: color .5s ease-in;
-  -moz-transition: color .5s ease-in;
-  -ms-transition: color .5s ease-in;
-  -o-transition: color .5s ease-in;
-  transition: color .5s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .gray1 {
@@ -86,3 +89,62 @@ button:hover{
 .gray4{
   background: #bfbfbf;
 }
+
+.logo, .SlickSlideClass{
+  margin: 11px 0;
+}
+.whiteRightBorder{
+  margin: 24px 0;
+	border-right: solid 1px #fff;
+}
+
+.slick-prev {
+	left: 10px;
+	position: absolute;
+	bottom: -30px;
+	top: unset;
+}
+
+.slick-next {
+	right: unset;
+	left: 50px;
+	top: unset;
+	bottom: -30px;
+}
+
+.TicketsBackground{background:url(../Slices/gradient-repeater.jpg) repeat-x; padding:30px 0; height: 129px; }
+.PresaleTickets{background: url(../Slices/buy-2016-pre-sale-tickets.png); width:320px; height:82px; float:right; margin-right: 15px; }
+.PresaleTickets:hover{background: url(../Slices/buy-2016-pre-sale-tickets-hover.png);}
+
+.pastEvent{background: url(../Slices/see-last-years-event.png); width:320px; height:82px; float:left; margin-left: 15px; }
+.pastEvent:hover{background: url(../Slices/see-last-years-event-hover.png);}
+
+.LeftBird { max-width: unset; position: relative; left: -50px; top: -6px;}
+.RightBird { max-width: unset; position: relative; left: -75px; top: -6px;}
+
+.gray1.mainContent{margin-top:-40px; padding-top: 80px; margin-bottom: 50px;}
+
+
+.footer{
+  background: url(../Slices/big-ears-splash-footer.jpg) repeat-x;
+  background-position: center top;
+  background-size: 100% auto;
+  padding: 25px 0;
+}
+
+.emailFeild {
+	width: unset;
+	float: left;
+	border: solid 1px #fff;
+	padding: 10px 15px;
+	line-height: 20px;
+	height: unset;
+}
+
+.social{width:40px; height:40px; float:left; margin:0 15px; }
+.social.Facebook{background:url(../Slices/big-ears-facebook@2x.png); background-size: 100% auto;}
+.social.Facebook:hover{background:url(../Slices/big-ears-facebook-hover@2x.png); background-size: 100% auto;}
+.social.Instagram{background:url(../Slices/big-ears-instagram@2x.png); background-size: 100% auto;}
+.social.Instagram:hover{background:url(../Slices/big-ears-instagram-hover@2x.png); background-size: 100% auto;}
+.social.Twitter{background:url(../Slices/big-ears-twitter@2x.png); background-size: 100% auto;}
+.social.Twitter:hover{background:url(../Slices/big-ears-twitter-hover@2x.png); background-size: 100% auto;}

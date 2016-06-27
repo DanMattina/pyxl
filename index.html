@@ -6,70 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <link rel="stylesheet" href="css/app.css">
-
-    <script src="https://use.typekit.net/uxc6ivz.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
   </head>
   <body>
 
     <div class="row">
-      <div class="large-7 columns">
+      <div class="large-8 columns whiteRightBorder">
         <!-- -bIG EARS GRAPHIC AND DATE- -->
-      </div><!-- close large-7 -->
-      <div class="large-1 columns">
-        <!-- -white line space- -->
-      </div><!-- close large-1 -->
-      <div class="large-4 columns slideshow">
-      <!-- - Sledeshow int he top right - -->
-      </div><!-- close large-4 slideshow -->
+        <a href="/index.html"><img class="logo" src="Slices/big-ears-2016-logo.png"></a>
+      </div><!-- close large-8 -->
+        <span >&nbsp;</span>
+      <div class="large-4 columns">
+      <!-- - Slideshow in the top right - -->
+      <div class="SlickSlideClass">
+        <div><img src="Slices\sample-quote1.png" alt="slide 1" /></div>
+        <div><img src="Slices\sample-quote1.png" alt="slide 1" /></div>
+        <div><img src="Slices\sample-quote1.png" alt="slide 1" /></div>
+      </div>
+
+    </div><!-- close large-4 slideshow -->
     </div><!-- close row -->
 
     <div class="row">
       <div class="large-1 columns">
+        <img class="LeftBird" src="Slices\big-ears-bird-left.png">
       </div><!-- close large-1 -->
-      <div class="large-10 columns">
-
-        <div class="row">
-          <div class="large-1 columns">
-          </div><!-- close large-1 -->
-          <div class="large-5 columns">
+      <div class="large-5 columns TicketsBackground">
             <!-- - Buy presale tickets - -->
-          </div><!-- close large-5 -->
-          <div class="large-5 columns">
+            <div class="PresaleTickets"><a href="#" class="calloutButtons"><p>Buy 2016 Presale Tickets</p></a></div>
+      </div><!-- close large-5 -->
+      <div class="large-5 columns TicketsBackground">
             <!-- - See last year - -->
-          </div><!-- close large-5 -->
-          <div class="large-1 columns">
-          </div><!-- close large-1 -->
-        </div><!-- cloe row -->
-
-      </div><!-- close large-10 -->
+            <div class="pastEvent"><a href="#" class="calloutButtons"><p>See Last Year's Event</p></a></div>
+      </div><!-- close large-5 -->
       <div class="large-1 columns">
+        <img class="RightBird" src="Slices\big-ears-bird-right.png">
       </div><!-- close large-1 -->
     </div><!-- close row -->
-
-    <div class="row">
+<div class="gray1 mainContent">
+    <div class="row gray1">
       <div class="large-5 columns news">
+      <h1>Festival News</h1>
+      <h3><a href="#">Big Ears 2016 Artists Announced</a></h3>
+      <p>Quostecta quostecta eaqui bla quis dolupta nones vendam nones et as nonsequamus...</p>
+      <hr>
+      <h3><a href="#">Top Events to See at Big Ears 2016</a></h3>
+      <p>Explant quostecta eaqui bla quis vendam nones et as nonsequamus molore...</p>
+      <hr>
+      <h3><a href="#">10 Visual Artists to Catch at Big Ears Festival</a></h3>
+      <p>Nones quostecta eaqui bla quis dolupta vendam nones et as nonsequamus molore...</p>
+      <hr>
+
       </div><!-- close large-5 -->
       <div class="large-7 columns video">
+        <div class="flex-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/9eIufXCizK4" frameborder="0" allowfullscreen></iframe></div>
       </div><!-- close large-7 -->
     </div><!-- close row -->
-
+</div>
+<div class="footer">
     <div class="row">
       <div class="large-3 columns">
         <h1>Stay Connected</h1>
       </div><!-- close large-3 -->
       <div class="large-6 columns">
+        <form action="#">
+          <input class="emailFeild gray1" type="text" name="emailAddress"  value="Email Address"><input class="inputButton" type="submit" value="Sign Up">
+        </form>
       </div><!-- close large-6 -->
-      <div class="large-3 columns social">
+      <div class="large-3 columns">
+        <div class="social Facebook">&nbsp;</div>
+        <div class="social Instagram">&nbsp;</div>
+        <div class="social Twitter">&nbsp;</div>
       </div><!-- close large-3 -->
     </div><!-- close row -->
+</div><!-- footer close -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 
-    <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/foundation.orbit.js"></script>
     <script src="js/app.js"></script>
+
+    <script src="js/vendor/toggleval.js" type="text/javascript"></script>
+
+    <script src="https://use.typekit.net/uxc6ivz.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <script>
+    $(document).foundation();
+    </script>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.SlickSlideClass').slick();
+        $("input[type=text]").toggleVal();
+      });
+    </script>
   </body>
 </html>
