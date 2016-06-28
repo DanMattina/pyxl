@@ -1,5 +1,7 @@
 body{
-  font-family: "Proxima Nova Regular", sans-serif;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   color: #686b72;
   background :url(../Slices/big-ears-festival-2016-header.jpg) no-repeat #f2f2f2;
@@ -8,7 +10,9 @@ body{
 }
 
 h1{
-  font-family: Nimbus Sans Cond Reg, sans-serif;
+  font-family: "nimbus-sans-condensed",sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 32px;
   line-height: 32px;
   color: #000;
@@ -16,7 +20,9 @@ h1{
 }
 
 h2{
-  font-family: "Nimbus Sans Cond Reg", sans-serif;
+  font-family: "nimbus-sans-condensed",sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size:24px;
   line-height: 20px;
   color:#000;
@@ -25,7 +31,9 @@ h2{
 }
 
 h3{
-  font-family: "Proxima Nova Bold", sans-serif;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
   line-height:20px;
   color: #000;
@@ -38,7 +46,9 @@ h5{}
 h6{}
 
 p{
-  font-family: "Proxima Nova Regular", sans-serif;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   color: #686b72;
 }
@@ -101,7 +111,7 @@ button:hover, .inputButton:hover{
 .slick-prev {
 	left: 10px;
 	position: absolute;
-	bottom: -30px;
+	bottom: -45px;
 	top: unset;
 }
 
@@ -109,10 +119,14 @@ button:hover, .inputButton:hover{
 	right: unset;
 	left: 50px;
 	top: unset;
-	bottom: -30px;
+	bottom: -45px;
 }
 
-.TicketsBackground{background:url(../Slices/gradient-repeater.jpg) repeat-x; padding:30px 0; height: 129px; }
+.TicketsBackground{background:url(../Slices/gradient-repeater.jpg) repeat-x; padding:30px 0; height: 129px;
+-webkit-box-shadow: 0px -21px 20px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px -21px 20px 0px rgba(0,0,0,0.25);
+box-shadow: 0px -21px 20px 0px rgba(0,0,0,0.25);
+ }
 .PresaleTickets{background: url(../Slices/buy-2016-pre-sale-tickets.png); width:320px; height:82px; float:right; margin-right: 15px; }
 .PresaleTickets:hover{background: url(../Slices/buy-2016-pre-sale-tickets-hover.png);}
 
@@ -133,12 +147,16 @@ button:hover, .inputButton:hover{
 }
 
 .emailFeild {
-	width: unset;
+	width: 75%;
 	float: left;
 	border: solid 1px #fff;
 	padding: 10px 15px;
 	line-height: 20px;
 	height: unset;
+}
+
+.calloutButtons p {
+	display: none;
 }
 
 .social{width:40px; height:40px; float:left; margin:0 15px; }
