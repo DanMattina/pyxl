@@ -9,14 +9,13 @@ body{
   background-size: 100% auto;
 }
 
-@media only screen and (min-width: 639px) {
+@media only screen and (max-width: 639px) {
   body{
     background :url(../Slices/big-ears-festival-2016-header.jpg) no-repeat #f2f2f2;
     background-position: center top;
     background-size: auto 450px;
   }
 }
-
 
 h1{
   font-family: "nimbus-sans-condensed",sans-serif;
@@ -117,6 +116,10 @@ button:hover, .inputButton:hover{
 	border-right: solid 1px #fff;
 }
 
+@media only screen and (max-width: 639px) {
+  .whiteRightBorder{ margin: 0; border-right:none;}
+}
+
 .slick-prev {
 	left: 10px;
 	position: absolute;
@@ -131,18 +134,30 @@ button:hover, .inputButton:hover{
 	bottom: -45px;
 }
 
+@media only screen and (max-width: 639px) {
+  .SlickSlideClass.slick-initialized.slick-slider {height: 150px;}
+  .slick-next{bottom:0;}
+  .slick-prev{bottom:0;}
+  .SlickSlideClass { margin: 0 0 11px ;}
+}
+
 .TicketsBackground{background:url(../Slices/gradient-repeater.jpg) repeat-x; padding:30px 0; height: 129px;
 -webkit-box-shadow: 0px -21px 20px 0px rgba(0,0,0,0.25);
 -moz-box-shadow: 0px -21px 20px 0px rgba(0,0,0,0.25);
 box-shadow: 0px -21px 20px 0px rgba(0,0,0,0.25);
  }
+ @media only screen and (max-width: 639px) {
+   .TicketsBackground{padding:30px 0; height: unset;}
+ }
+
+
 .PresaleTickets{background: url(../Slices/buy-2016-pre-sale-tickets.png); width:320px; height:82px; float:right; margin-right: 15px; }
 .PresaleTickets:hover{background: url(../Slices/buy-2016-pre-sale-tickets-hover.png);}
 
 .pastEvent{background: url(../Slices/see-last-years-event.png); width:320px; height:82px; float:left; margin-left: 15px; }
 .pastEvent:hover{background: url(../Slices/see-last-years-event-hover.png);}
 
-@media only screen and (min-width: 639px) {
+@media only screen and (max-width: 639px) {
 .PresaleTickets{width:320px; height:82px; float:unset; margin:15px auto; }
 .pastEvent{width:320px; height:82px; float:unset; margin:15px auto; }
 }
@@ -153,12 +168,24 @@ box-shadow: 0px -21px 20px 0px rgba(0,0,0,0.25);
 
 .gray1.mainContent{margin-top:-40px; padding-top: 80px; margin-bottom: 50px;}
 
+@media only screen and (max-width: 639px) {
+.gray1.mainContent{margin:0; padding:0; margin-bottom: 50px;}
+}
 
 .footer{
   background: url(../Slices/big-ears-splash-footer.jpg) repeat-x;
   background-position: center top;
   background-size: 100% auto;
   padding: 25px 0;
+}
+
+@media only screen and (max-width: 639px) {
+  .footer{
+    background: url(../Slices/big-ears-splash-footer.jpg) repeat-x;
+    background-position: center top;
+    background-size: auto 250px;
+    padding: 25px 0;
+  }
 }
 
 .emailFeild {
@@ -174,6 +201,14 @@ box-shadow: 0px -21px 20px 0px rgba(0,0,0,0.25);
 	display: none;
 }
 
+.FooterMobile {
+	margin: 10px auto !important;
+	display: block;
+}
+.FooterMobile h1 {
+ text-align: center;
+}
+
 .social{width:40px; height:40px; float:left; margin:0 15px; }
 .social.Facebook{background:url(../Slices/big-ears-facebook@2x.png); background-size: 100% auto;}
 .social.Facebook:hover{background:url(../Slices/big-ears-facebook-hover@2x.png); background-size: 100% auto;}
@@ -181,3 +216,8 @@ box-shadow: 0px -21px 20px 0px rgba(0,0,0,0.25);
 .social.Instagram:hover{background:url(../Slices/big-ears-instagram-hover@2x.png); background-size: 100% auto;}
 .social.Twitter{background:url(../Slices/big-ears-twitter@2x.png); background-size: 100% auto;}
 .social.Twitter:hover{background:url(../Slices/big-ears-twitter-hover@2x.png); background-size: 100% auto;}
+
+@media only screen and (max-width: 639px) {
+.socailContain {width: 150px; margin: 0 auto;}
+.social{width:40px; height:40px; float:left; margin:10px 5px 0; }
+}
